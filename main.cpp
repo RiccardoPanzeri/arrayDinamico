@@ -21,7 +21,7 @@ int main()
 		//stampo ivalori contenuti nell'array;
 		cout << "Stampo i valori contenuti nell'array:" << endl;
 		visualizzaArray(array, dim);
-		delete []array;
+		delete []array;//ogni volta che l'operazione è completata, distruggo il puntatore con la keyword 'delete'. Il puntatore verrà ricreato e gli verrà assegnato un nuovo indirizzo dall'heap ad ogni ripetizione del programma;"
 		cout << "Vuoi ripetere l'operazione? (y- si, qualunque altro tasto per chiudere il programma)" << endl;
 		cin >> risposta;
 		if (risposta == 'y') {
